@@ -1,0 +1,27 @@
+
+#cR, #cO, #cG{
+    border: 2px solid black;
+    width : 100px;
+    height: 100px;
+    border-radius : 50px; 
+} 
+.circleO{
+    display: none;
+    width : 100px;
+    height: 100px;
+    background: orange;
+    border-radius : 50px; 
+}
+.circleG{
+    width : 100px;
+    height: 100px;
+    background:green; 
+    border-radius : 50px; 
+}
+.circleR{
+    display: none;
+    width : 100px;
+    height: 100px;
+    background: red;
+    border-radius : 50px; 
+}
