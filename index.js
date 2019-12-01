@@ -3,27 +3,29 @@ const bt = document.querySelector('button');
 
 bt.addEventListener('click', changer);
 
-function changer(){
-    console.log('circleO');
-   
-    document.getElementsByClassName('circleO')[0].style.display = 'block';
-    document.getElementsByClassName('circleG')[0].style.display = 'none';
-    setTimeout(changerToO, 2000);
+  if(document.getElementsByClassName('circleG')[0].style.display = 'block'){
+  
+  function changer(){
+      console.log('circleO');
+      document.getElementsByClassName('circleO')[0].style.display = 'block';
+      document.getElementsByClassName('circleG')[0].style.display = 'none';
+      let time = setTimeout(changerToO, 2000);
+      
+    function changerToO(){
+      console.log("circleR");
+      document.getElementsByClassName('circleO')[0].style.display = 'none';
+      document.getElementsByClassName('circleR')[0].style.display = 'block';
+      setTimeout(changerToR, 3000);
+    }
+
+    function changerToR(){
+      console.log("circleG");
+      document.getElementsByClassName('circleR')[0].style.display = 'none';
+      document.getElementsByClassName('circleG')[0].style.display = 'block';
+    }
+  }
 }
   
-function changerToO(){
-  console.log("circleR");
-  document.getElementsByClassName('circleO')[0].style.display = 'none';
-  document.getElementsByClassName('circleR')[0].style.display = 'block';
-  setTimeout(changerToR, 2000);
-}
-
-function changerToR(){
-  console.log("circleG");
-  document.getElementsByClassName('circleR')[0].style.display = 'none';
-  document.getElementsByClassName('circleG')[0].style.display = 'block';
-
-}
 
 
 
